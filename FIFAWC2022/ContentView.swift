@@ -9,29 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var searchText: String = ""
-    
-    var searchResults: [Team] {
-        if searchText.isEmpty {
-            return teamsList
-        } else {
-            return teamsList.filter{ team in
-                team.name.contains(searchText)
-            }
-        }
-    }
-    
     var body: some View {
-        NavigationView {
-            List{
-                ForEach(searchResults){ team in
-                    NavigationLink(destination: TeamView(selectedTeam: team)){
-                        Text(team.flag + " " + team.name)
-                    }
+        TabView {
+            GroupStageView(teamsList: teamsList)
+                .tabItem {
+                    Label("Group Stage", systemImage: "list.dash")
                 }
-            }
-            .searchable(text: $searchText)
-            .navigationTitle("World Cup Teams")
+            
+            BracketView(rounds: rounds)
+                .tabItem {
+                    Label("Knockout Bracket", systemImage: "star.fill")
+                }
+            
+            KeyStatsListView(allStats: allStats)
+                .tabItem {
+                    Label("Key Stats", systemImage: "chart.bar")
+                }
         }
     }
 }

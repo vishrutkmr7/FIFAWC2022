@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D8D9E3B2BDDD46C00632DAB /* GroupStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D9E3A2BDDD46C00632DAB /* GroupStageView.swift */; };
+		6D8D9E3D2BDDDDB400632DAB /* knockoutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D9E3C2BDDDDB400632DAB /* knockoutList.swift */; };
+		6D8D9E3F2BDDDEAC00632DAB /* BracketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D9E3E2BDDDEAC00632DAB /* BracketView.swift */; };
+		6D8D9E412BDE140100632DAB /* stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D9E402BDE140100632DAB /* stats.swift */; };
+		6D8D9E452BDE277C00632DAB /* KeyStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D9E442BDE277C00632DAB /* KeyStatsView.swift */; };
 		6DCDC8DD29BBFB3300A93918 /* FIFAWC2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDC8DC29BBFB3300A93918 /* FIFAWC2022App.swift */; };
 		6DCDC8DF29BBFB3300A93918 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDC8DE29BBFB3300A93918 /* ContentView.swift */; };
 		6DCDC8E129BBFB3400A93918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDC8E029BBFB3400A93918 /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D8D9E3A2BDDD46C00632DAB /* GroupStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStageView.swift; sourceTree = "<group>"; };
+		6D8D9E3C2BDDDDB400632DAB /* knockoutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knockoutList.swift; sourceTree = "<group>"; };
+		6D8D9E3E2BDDDEAC00632DAB /* BracketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracketView.swift; sourceTree = "<group>"; };
+		6D8D9E402BDE140100632DAB /* stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stats.swift; sourceTree = "<group>"; };
+		6D8D9E442BDE277C00632DAB /* KeyStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStatsView.swift; sourceTree = "<group>"; };
 		6DCDC8D929BBFB3300A93918 /* FIFAWC2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIFAWC2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCDC8DC29BBFB3300A93918 /* FIFAWC2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIFAWC2022App.swift; sourceTree = "<group>"; };
 		6DCDC8DE29BBFB3300A93918 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,7 +113,12 @@
 				6DCDC8E029BBFB3400A93918 /* Assets.xcassets */,
 				6DCDC8E229BBFB3400A93918 /* Preview Content */,
 				6DCDC90629BC545100A93918 /* teamsList.swift */,
+				6D8D9E3A2BDDD46C00632DAB /* GroupStageView.swift */,
 				6DCDC90829BC59E400A93918 /* TeamView.swift */,
+				6D8D9E402BDE140100632DAB /* stats.swift */,
+				6D8D9E442BDE277C00632DAB /* KeyStatsView.swift */,
+				6D8D9E3C2BDDDDB400632DAB /* knockoutList.swift */,
+				6D8D9E3E2BDDDEAC00632DAB /* BracketView.swift */,
 			);
 			path = FIFAWC2022;
 			sourceTree = "<group>";
@@ -197,7 +212,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					6DCDC8D829BBFB3300A93918 = {
 						CreatedOnToolsVersion = 14.2;
@@ -263,10 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8D9E3F2BDDDEAC00632DAB /* BracketView.swift in Sources */,
 				6DCDC90729BC545100A93918 /* teamsList.swift in Sources */,
+				6D8D9E452BDE277C00632DAB /* KeyStatsView.swift in Sources */,
+				6D8D9E3D2BDDDDB400632DAB /* knockoutList.swift in Sources */,
 				6DCDC8DF29BBFB3300A93918 /* ContentView.swift in Sources */,
 				6DCDC8DD29BBFB3300A93918 /* FIFAWC2022App.swift in Sources */,
+				6D8D9E412BDE140100632DAB /* stats.swift in Sources */,
 				6DCDC90929BC59E400A93918 /* TeamView.swift in Sources */,
+				6D8D9E3B2BDDD46C00632DAB /* GroupStageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -339,6 +360,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -367,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -399,6 +422,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

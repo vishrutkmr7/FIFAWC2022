@@ -32,6 +32,7 @@ struct TeamView_Previews: PreviewProvider {
     static var previews: some View {
         TeamView(selectedTeam: Team(name: "Qatar",
                                     description: "The Qatar national football team represents Qatar in international football, and is controlled by the Qatar Football Association and AFC. The team has appeared in ten Asian Cup tournaments and won it once in 2019. They play their home games at Khalifa International Stadium and Jassim Bin Hamad Stadium. The latter is considered the home stadium for the team.",
+                                    group: "A",
                                     flag: flag(country: "QA"),
                                     video: "https://ananayarora.com/static/fifa.mp4"))
     }
