@@ -26,6 +26,12 @@ struct StatsGroup {
 
 let topStatsData = StatsGroup(category: "Top Stats", categories: [
     StatCategory(
+        title: "Player of the Tournament",
+        stats: [
+            PlayerStat(name: "Lionel Messi", country: "AR", value: 2)
+        ]
+    ),
+    StatCategory(
         title: "Top Scorer",
         stats: [
             PlayerStat(name: "Kylian Mbappé", country: "FR", value: 8),
