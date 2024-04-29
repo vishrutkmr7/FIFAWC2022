@@ -15,7 +15,7 @@ struct WebView: UIViewRepresentable {
         let webViewConfiguration = WKWebViewConfiguration()
         webViewConfiguration.allowsInlineMediaPlayback = true
         
-        let webView =  WKWebView(frame: .zero, configuration: webViewConfiguration)
+        let webView = WKWebView(frame: .zero, configuration: webViewConfiguration)
         webView.scrollView.isScrollEnabled = false
         return webView
     }
@@ -36,7 +36,6 @@ struct TeamView: View {
                     WebView(videoID: videoID)
                         .frame(height: 300)
                         .cornerRadius(12)
-                        .padding(.horizontal, 24)
                 }
                 
                 Text("\(selectedTeam.flag) \(selectedTeam.name)")
@@ -63,6 +62,6 @@ struct TeamView_Previews: PreviewProvider {
             description: "The Qatar national football team represents Qatar in international football, and is controlled by the Qatar Football Association and AFC. The team has appeared in ten Asian Cup tournaments and won it once in 2019. They play their home games at Khalifa International Stadium and Jassim Bin Hamad Stadium. The latter is considered the home stadium for the team.",
             group: "A",
             flag: flag(country: "QA"),
-            video: "https://www.youtube.com/embed/2iaE0xHfUro"))
+            video: "https://www.youtube.com/embed/-F9WGMM8J48"))
     }
 }
