@@ -42,7 +42,7 @@ struct RoundDetailView: View {
         }
         .padding()
         .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray.opacity(0.2)))
-        .frame(width: UIScreen.main.bounds.width - 40) // Set the width based on screen size minus some padding
+        .frame(width: UIScreen.main.bounds.width - 40)
     }
 }
 
