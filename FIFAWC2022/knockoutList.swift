@@ -54,10 +54,10 @@ let rounds = [
     Round(
         name: "Quarterfinals",
         matches: [
-            Match(team1: croatia, team2: brazil, winner: croatia),
             Match(team1: netherlands, team2: argentina, winner: argentina),
+            Match(team1: croatia, team2: brazil, winner: croatia),
+            Match(team1: england, team2: france, winner: france),
             Match(team1: morocco, team2: portugal, winner: morocco),
-            Match(team1: england, team2: france, winner: france)
         ]
     ),
     Round(
@@ -68,15 +68,10 @@ let rounds = [
         ]
     ),
     Round(
-        name: "Third Place Playoff",
+        name: "Final, 3rd Place",
         matches: [
+            Match(team1: argentina, team2: france, winner: argentina),
             Match(team1: croatia, team2: morocco, winner: croatia)
-        ]
-    ),
-    Round(
-        name: "Final",
-        matches: [
-            Match(team1: argentina, team2: france, winner: argentina)
         ]
     )
 ]

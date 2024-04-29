@@ -36,6 +36,13 @@ struct TeamView: View {
                     WebView(videoID: videoID)
                         .frame(height: 300)
                         .cornerRadius(12)
+                        .overlay(
+                            Image(systemName: "play.circle.fill")
+                                .resizable()
+                                .frame(width: 64, height: 64)
+                                .foregroundColor(.white.opacity(0.8)
+                                )
+                        )
                 }
                 
                 Text("\(selectedTeam.flag) \(selectedTeam.name)")

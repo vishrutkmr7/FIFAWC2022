@@ -25,15 +25,16 @@ struct GroupStageView: View {
         NavigationView {
             List(groupedTeams.keys.sorted(), id: \.self) { group in
                 Section(header: Text("Group \(group)")) {
-                    ForEach(groupedTeams[group] ?? []) { team in
+                    ForEach(Array(groupedTeams[group]?.enumerated() ?? [].enumerated()), id: \.element.id) { index, team in
                         NavigationLink(destination: TeamView(selectedTeam: team)) {
-                            Text(team.flag + " " + team.name)
+                            let prefix = searchText.isEmpty && index < 2 ? "✅ " : ""
+                            Text("\(prefix)\(team.flag) \(team.name)")
                         }
                     }
                 }
             }
             .searchable(text: $searchText)
-            .navigationTitle("Group Stage Teams")
+            .navigationTitle("Group Stage")
         }
     }
 }
